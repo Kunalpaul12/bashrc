@@ -1,0 +1,25 @@
+alias c="clear"
+alias rnra="source ~/.bash_profile && adb devices && nvm use defalut 14 && cd android &&./gradlew clean && cd .. && npx react-native run-android"
+alias rncra="rm -rf node_modules/ && source ~/.bash_profile && nvm use 14 && yarn && adb devices && nvm use defalut 14 && cd android &&./gradlew clean && cd .. && npx react-native run-android"
+alias rnri="source ~/.bash_profile && nvm use 14 && npx react-native run-ios"
+alias rnrnbi="source ~/.bash_profile && nvm use 14 && cd ios && pod deintegrate && npx pod-install && xcodebuild clean && cd .. && patch-package && npx react-native run-ios"
+alias rnroi="source ~/.bash_profile && nvm use 14 && xcrun simctl boot 0245B2A7-8E8C-48DB-A780-EE5FCA7A9F75 && npx react-native run-ios --simulator='iPhone 8 (15.5)'"
+alias rnrixs="source ~/.bash_profile && nvm use 14 && cd ios && pod deintegrate && npx pod-install && xcodebuild clean && cd .. && patch-package  && xcrun simctl boot 207842C1-78CE-464E-93FF-9D12896FFE6A && npx react-native run-ios --simulator='iPhone Xs'"
+alias rnrise="source ~/.bash_profile && nvm use 14 && xcrun simctl boot 333918AF-4522-48CB-8055-F5F5BF1C5C23 && npx react-native run-ios --simulator='iPhone SE'"
+alias rnrim="source ~/.bash_profile && nvm use 14 && xcrun simctl boot 2D55D324-9A1F-4D8A-B913-96D076C8EF8A && npx react-native run-ios --simulator='iPhone 13 mini'"
+alias rncri="rm -rf node_modules/ && source ~/.bash_profile && nvm use 14 && yarn && cd ios && pod deintegrate && pod cache clean --all  && npx pod-install && xcodebuild clean && rm -rf build && cd .. && patch-package && npx react-native run-ios"
+alias rncroi="rm -rf node_modules/ && source ~/.bash_profile && nvm use 14 && yarn && cd ios && pod deintegrate && pod cache clean --all  && npx pod-install && xcodebuild clean && cd .. && patch-package && npx react-native run-ios --simulator='iPhone 8'"
+alias rnrni="source ~/.bash_profile && nvm use 14 && npx react-native run-ios --device 'Nitu’s iPhone' -- configuration Debug"
+alias rnbi="source ~/.bash_profile & cd automation && python3 build.py ios"
+alias rnba="source ~/.bash_profile && cd automation && python3 build.py android"
+alias rnbad="source ~/.bash_profile && cd automation && python3 build.py android_debug"
+alias l="ls"
+alias sb="source ~/.bashrc"
+alias d="source ~/.bash_profile && adb devices"
+alias sbp="source ~/.bash_profile"export PATH=$PATH:/usr/local/bin
+alias rb='sudo pkill bluetoothd'
+alias lid='xcrun simctl list'
+alias rcup="cd ~ && cd Projects && cd everup-integrations && cd everup-qa && npm run cleanup"
+alias rnrae=" cd ~/Library/Android/sdk/emulator && ./emulator -avd Pixel_4_XL_API_32 -wipe-data -no-snapshot-load && cd ~ && cd ~/Projects/everup-mobile-app && source ~/.bash_profile && adb devices && nvm use defalut 14 && cd android &&./gradlew clean && cd .. && npx react-native run-android"
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
